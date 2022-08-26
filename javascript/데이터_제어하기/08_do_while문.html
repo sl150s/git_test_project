@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>08_do_while문_반복문</h1>
+    
+    <script>
+        // while문과 비슷하지만, 첫번째 반복문을 실행 할때 실행 순서가 조금씩 다름
+        // do {
+        //     //반복할 코드
+        // }while(조건문);
+
+        // do..while은 조건문을 판단하기 전에 do 블록의 코드를 먼저 실행합니다. 
+        // 그리고, 조건문을 판단하여 조건문의 결과가 true이면 do 블록의 코드를 다시 실행함. 
+        {
+            let num = 1;
+
+            do{
+                document.write(num + ".실행되었습니다.");
+                num++;
+            }while(num <= 5)
+        }
+        //예상답변 1,2,3,4,5
+
+        //참고 : https://hianna.tistory.com/371
+        
+    </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>12_continue문</h1>
+    
+    <script>
+        let num = 0; 
+        while(num < 10){
+            num++;
+            if (num == 5){
+                continue;
+            }
+            document.write(num);
+        }
+
+        for(let i = 1; i<=10; i++){
+            if(i == 5){
+                continue;
+            }
+            document.write(i);
+        }
+
+
+
+        let num2 = 0; 
+        while(true){
+            num2++;
+            if(num2 == 3){
+                continue;
+            }
+            if(num2 > 6){
+                break;
+            }
+            document.write(num2);
+        }
+        //예상답변 : 1,2,4,5,6
+        
+
+
+        
+    </script>
+
+
+
+
+</body>
+</html>

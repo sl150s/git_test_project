@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>10_중첩for문</h1>
+    
+    <script>
+        //for(초기식; 조건식; 증감식 )
+        for(let i = 1; i < 5 ;  i++){
+            document.write(i + ".A가 실행되었습니다.");
+            for(let j = 1; j < 4 ;  j++){
+                document.write(j + ".B가 실행되었습니다.");
+            }
+        }
+        //예상답안 :
+        //1. A가 실행  / 1,2,3.B가 실행되었습니다. 
+        //2. A가 실행  / 1,2,3.B가 실행되었습니다. 
+        //3. A가 실행  / 1,2,3.B가 실행되었습니다. 
+        //4. A가 실행  / 1,2,3.B가 실행되었습니다. 
+
+
+
+        
+        for(let i = 1; i <= 1 ;  i++){
+            document.write(i + ".A가 실행되었습니다.");
+            for(let j = 1; j < 4 ;  j++){
+                document.write(j + ".B가 실행되었습니다.");
+            }
+        }
+        //예상답안 : 
+        // 1. A가 실행되었습니다, 1,2,3B가 실행되었습니다. 
+
+
+        
+    </script>
+
+
+
+
+</body>
+</html>

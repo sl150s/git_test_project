@@ -1,0 +1,55 @@
+-데이타 베이스 = 엑셀같음 
+
+php는 데이타베이스에 데이터 저장 
+자바스크립트는 변수에 데이터 저장 
+
+
+
+
+
+-마우스, 페럴렉스 이펙트 한번 보기 
+
+
+php 댓글 쓰는 방법 배움 
+
+
+html + 자바랑 합쳐진것이 php 라고 생각하면됨 
+
+
+=========FTP-SIMPLE 사용방법 
+ftp-simple 다운로드 -> f1 -> ftp-simple:config ~  -> 검색 후 나오는 화면에
+ host: 닷홈 주소
+ username : 아이디
+ password : 비밀번호
+ path : /html/
+ confirm:false 로 수정하여 기입하기 ->
+ftop-simple:Remote derectory work ~ 클릭 > local host 접속-> 
+
+
+
+
+**닷홈 주소 : sl120s.dothome.co.kr 
+
+**어드민 들어가는 방법 : https://sl120s.dothome.co.kr/myadmin ->
+어드민 주소(DB주소)
+
+- DB에서 SQL 이라는 언어를 사용 
+
+
+
+
+
+<숙제> 
+- 자바스크립트의 역사 유튜브영상 보기  /완
+- 수요일까지 홈페이지 디자인 완성 /완
+- PHP폴더 새로 만들고 주제 정해서 이미지 바꿔서 댓글쓰는 페이지 완성하기 /완 
+http://sl120s.dothome.co.kr/php/comment/comment.php#comment
+-깃에 페이지 만들어서 자바스크립트 데이터저장하기, 불러오기, 실행하기등등 4개  정리 하기 
+
+<쪽지시험>
+-  //반복문(while, do while, for,forEach, map(), for in, for of ) 
+-- do while문, while은 거의 죽은 문법
+ var mum = [1,2,3,4,5,6,7,8,9;] 
+어떤 반복문을 사용해서 원하는 번호를 도출할 수 있도록해야함. 숙제
+
+

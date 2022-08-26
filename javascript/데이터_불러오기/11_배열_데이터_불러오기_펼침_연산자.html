@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>11.배열 : 데이터 불러오기 펼침연산자</h1>
+
+    
+    <script>
+        //간단히 말해서 배열에 포함된 항목을 목록으로 바꿔주는 연산자 
+        //마침표 세 개(...)로 표시한다
+        // 펼침 연산자는 단독으로 쓰일 수 없음
+        //배열에 포함된 항목을 목록으로 바꿨다면 이를 배열이나 객체등에 담아줘야한다. 변수에 담게 되면 에러가 발생한다. 
+        //https://cotak.tistory.com/72
+
+        {
+            const num = [100,200,300,400,500];
+            const num2 = [600,700];
+
+            document.write(num);
+            document.write(num[0], num[1],num[2],num[3],num[4])
+            document.write(...num);
+
+            document.write(...num,...num2);
+          
+          
+         
+        }
+    </script>
+</body>
+</html>

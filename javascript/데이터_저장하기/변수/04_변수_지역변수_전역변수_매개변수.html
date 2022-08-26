@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        var vscope = 'global'; //전역변수 global
+
+        function fscope(){
+            vscope = 'global'; //var, let, const.. 등이 없이 변수 선언될 경우 전역변수 
+        }
+
+        function fscope1(){
+            var vscope = 'local'; //지역변수 local
+            vscope = 'global' ;
+            // 단, 함수 중괄호 안쪽에 이미 var,const..등을 사용해
+            // 지역변수가 만들어졌다면,
+            // 전역변수를 선언하여도 지역변수가 할당됨(함수 밖 /// 함수 안에서는 전역변수로 할당됨 )
+        }
+        //지역변수:함수 중괄호 안쪽에서만 접근할 수 있는 변수
+        //전역변수:js 애플리케이션에서 전부 접근할 수 있는 변수
+        fscope();
+        fscope1();
+        console.log(vscope);
+
+        
+        let x = 100; //전역변수
+        let y = 200; //전역변수
+
+        function func(){
+            let x = 300;
+            let z = "javascript";
+            x = 400 ;
+            y = 500 ;
+            document.write(x); 
+            document.write(y);
+            document.write(z);
+            
+            // 함수 안
+            // x 400
+            // y 500
+            // z javascript
+        }
+        func();
+        document.write(x); 
+        document.write(y);
+        document.write(z);
+
+        // 함수 밖
+        // x 100 
+        // y 500
+        // z 안나옴 
+
+        
+    </script>
+
+
+
+</body>
+</html>

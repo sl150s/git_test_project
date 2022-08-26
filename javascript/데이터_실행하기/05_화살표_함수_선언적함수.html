@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>05. 화살표 함수_선언적 함수 </h1>
+    
+    <script>
+
+        {
+            func = () => {
+                document.write("함수가 실행되었습니다.7")
+            }
+            func();
+            
+            
+        }
+
+            
+    </script>
+
+
+    <h1>06. 화살표 함수_익명 함수 </h1>
+    <script>
+
+        {
+            const func = () => {
+                document.write("함수가 실행되었습니다.8");
+            }
+            func();
+            
+            
+        }
+    </script>
+
+    <h1>07. 화살표 함수_매개변수 함수 </h1>
+    <script>
+
+        {
+            func = (str) => {
+                document.write(str);
+            }
+            func("함수가 실행되었습니다.9");
+            
+            
+        }
+    </script>
+
+
+    <h1>08. 화살표 함수_리턴값 함수 </h1>
+    <script>
+
+        {
+            func = () => {
+                const str = "함수가 실행되었습니다.10"
+                return str;
+            }
+            document.write(func());
+            
+        }
+    </script>
+
+
+    <h1>09. 화살표 함수_익명함수 + 매개변수 +리턴값  </h1>
+    <script>
+
+        {
+
+            const func = (str) => {
+                return str; 
+            };
+            document.write(func("함수가 실행되었습니다.11"));
+            //혼자 먼저 생각해서 풀어본것 
+            // const func = (str) => {
+            //     document.write(str);
+            //     return str;
+            // }
+            // func("함수가 실행되었습니다.11");
+            
+            
+        }
+    </script>
+
+
+    <h1>10. 화살표 함수_익명함수+매개변수+리턴값+괄호생략  </h1>
+    <script>
+
+        {
+
+            const func = str => {
+                return str;
+            }
+            document.write(func("함수가 실행되었습니다.12"));
+            
+        }
+    </script>
+
+
+    <h1>10. 화살표 함수_익명함수+매개변수+리턴값+괄호생략  </h1>
+    <script>
+
+        {
+
+            const func = str => { //a매개변수가 한개면 괄호 생략가능
+                return str;
+            }
+            document.write(func("함수가 실행되었습니다.12"));
+            
+        }
+    </script>
+
+
+    <h1>11. 화살표 함수_익명함수 + 매개변수 + 리턴값 + 괄호생략+ 리턴생략  </h1>
+    <script>
+
+        {
+
+           const func = str => str;
+           document.write(func("함수가 실행되었습니다.13"));
+        }
+    </script>
+
+    <h1>12. 화살표 함수_선언적함수 + 매개변수 + 리턴값 + 괄호생략+ 리턴생략  </h1>
+    <script>
+
+        {
+
+        func = str => str;
+        document.write(func("함수가 실행되었습니다.13"));
+        }
+    </script>
+
+
+
+
+</body>
+</html>

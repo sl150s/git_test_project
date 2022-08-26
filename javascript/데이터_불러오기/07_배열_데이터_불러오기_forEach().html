@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>07.배열 : 데이터 불러오기 forEach()문</h1>
+    <script>
+        {
+            const num = [100,200,300,400,500];
+
+            // ducoment.write(num[0]);
+            // ducoment.write(num[1]);
+            // ducoment.write(num[2]);
+            // ducoment.write(num[3]);
+            // ducoment.write(num[4]);
+
+            //for(초기값, 조건식, 증감식)
+            for(i=0; i<num.length; i++){
+                document.write(num[i]); 
+            }
+            //100,200,400,500,
+
+            //forEach()
+            num.forEach(function(el){
+                document.write(el);
+            });
+            //100,200,300,400,500, 
+            
+            
+
+            //forEach(element,index,array)
+            num.forEach(function(element,index,array){
+                document.write(element);
+                document.write(index);
+                document.write(array);
+            }); 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>17. 재귀함수:자기자신을 다시 호출하는 함수</h1>
+    
+    <script>
+        
+        {
+            //매개변수 함수
+            function func(num){
+                if(num <= 1){
+                    document.write("if함수가 실행되엇씁니다"+num);
+                } else{
+                    document.write("else함수가 실행되었습니다"+num);
+                    func(num-1);
+                }
+            }
+            func(5);
+
+
+
+         
+
+        }
+            
+    </script>
+
+
+
+
+</body>
+</html>

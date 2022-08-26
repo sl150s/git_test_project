@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>14. 즉시실행함수 </h1>
+    
+    <script>
+        
+        {
+            //즉시실행함수 
+            //즉시실행함수의 경우 괄호위치가 다를뿐 같은 기능을 실행할 수 있다. 
+            //즉시실행함수를 사용하는 이유 
+
+            // 초기화 
+            //즉시실행 함수는 한번의 실행만 필요로 하는 초기화 코드에 많이 사용된다. 
+            // 그렇다면 왜 초기화 코드 부분에 많이 사용할까? -> 
+            // 변수를 전역(global scope)으로 선언하는 것을 피하기 위해서임. 
+            // 전역에 변수를 추가하지 않아도 되기 때문에 코드 충돌 없이 구현 할 수 있어, 플러그인이나 라이브러리 등을 만들 때 많이 사용된다.
+
+            //참고 : https://beomy.tistory.com/9
+            (function (){
+                document.write("즉시실행함수가 실행되었습니다.");
+            }());
+
+            (function (){
+                document.write("즉시실행함수가 실행되었습니다.");
+            })();
+
+
+            //즉시실행 화살표함수 
+            (() => {
+                document.write("즉시실행화살표함수가 실행되었습니다.");
+            })();
+            //차례대로 함수실행- > 
+            //즉시실행함수실행 
+            //즉시실행화살표함수실행
+        }
+            
+    </script>
+
+
+
+
+</body>
+</html>

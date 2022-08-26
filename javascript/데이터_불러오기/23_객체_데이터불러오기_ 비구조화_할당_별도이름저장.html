@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>22.객체 : 데이터 불러오기 펼침연산자_비구조화 할당</h1>
+
+    
+    <script>
+
+        {
+            const obj = {
+                a:100,
+                b:200,
+                c:"javascript"
+            }
+            const {a:name1, b:name2, c:name3} = obj; 
+            
+            document.write(name1);
+            document.write(name2);
+            document.write(name3);
+
+            // 예상 답안  100,200,javascript
+
+            //참고 : https://velog.io/@devstone/%EA%B5%AC%EC%A1%B0-%EB%B6%84%ED%95%B4-%ED%95%A0%EB%8B%B9%EA%B0%9D%EC%B2%B4-%EB%B9%84%EA%B5%AC%EC%A1%B0%ED%99%94-%ED%95%A0%EB%8B%B9%EA%B3%BC-spread-%EC%97%B0%EC%82%B0%EC%9E%90
+        }
+    </script>
+</body>
+</html>
